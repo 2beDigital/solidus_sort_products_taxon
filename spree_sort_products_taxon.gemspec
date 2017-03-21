@@ -11,8 +11,6 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This gem permited sort new products to first position in taxon.}
   spec.description   = %q{This gem permited sort new products to first position in taxon.}
-  spec.homepage      = "www.2bedigital.com"
-
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
