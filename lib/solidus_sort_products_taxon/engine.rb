@@ -1,8 +1,8 @@
-module SpreeSortProductsTaxon
+module SolidusSortProductsTaxon
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_sort_products_taxon'
+    engine_name 'solidus_sort_products_taxon'
 
     # use rspec for tests
     config.generators do |g|
@@ -15,8 +15,8 @@ module SpreeSortProductsTaxon
       end
     end
 
-    initializer "spree_sort_products_taxon.preferences", before: :load_config_initializers do
-	  SpreeSortProductsTaxon::Config = Spree::SpreeSortProductsTaxonSetting.new
+    initializer "solidus_sort_products_taxon.preferences", before: :load_config_initializers do
+	  SolidusSortProductsTaxon::Config = Spree::SolidusSortProductsTaxonSetting.new
 	end
 
     config.to_prepare &method(:activate).to_proc

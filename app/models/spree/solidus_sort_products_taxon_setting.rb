@@ -1,5 +1,5 @@
 module Spree
-	class SpreeSortProductsTaxonSetting < Preferences::Configuration
+	class SolidusSortProductsTaxonSetting < Preferences::Configuration
 		preference :activated, :boolean, default: false
 	end
 end

@@ -1,4 +1,4 @@
-module SpreeSortProductsTaxon
+module SolidusSortProductsTaxon
 	class Configuration < Preferences::Configuration
 		preferences :activated, :boolean, default: false
 	end
